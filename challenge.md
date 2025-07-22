@@ -1,4 +1,4 @@
-# 📅 Day 1 Challenge: Menu-Based System Health Check Script
+# 📅 Challenge 1: Menu-Based System Health Check Script
 
 👋 **Hello Learners,**
 
