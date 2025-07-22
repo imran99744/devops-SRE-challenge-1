@@ -60,3 +60,32 @@ To send the system health report **every four hours**, add the following line to
 
 ```bash
 0 */4 * * * /path/to/system_health_check.sh <<< "5"
+
+
+## 🧠 Lessons Learned
+
+- Modularizing Bash functions makes scripts easier to read and extend.
+- Debugging with `set -x` helps trace issues line by line.
+- `ssmtp` is a simple way to send emails from Bash.
+- Adding exception handling using `if` conditions makes scripts more robust.
+- Scheduling with `cron` is essential for automation in DevOps and SRE.
+
+---
+
+## ❗Challenges Faced
+
+- Setting up `ssmtp` and Gmail app passwords took time due to email security restrictions.
+- Handling interactive input in a cron job required using `<<<` to simulate input.
+- Managing multiline email content inside Bash required using `cat <<EOF`.
+
+---
+
+## 💬 Sharing the Experience
+
+I'm thrilled to participate in this challenge to grow my **DevOps and SRE skills**!
+
+📢 I’ve shared my experience on social media using the hashtags:  
+`#getfitwithsagar`, `#SRELife`, and `#DevOpsForAll`
+
+Feel free to check out my journey and interact!
+
