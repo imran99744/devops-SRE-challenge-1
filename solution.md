@@ -54,16 +54,8 @@ The script includes basic checks such as:
 
 ---
 
-## 🕒 Cron Job Setup
 
-To send the system health report **every four hours**, add the following line to your crontab:
-
-```bash
-0 */4 * * * /path/to/system_health_check.sh <<< "5"
-```
-
-
-## Lessons Learned
+## 🧠 Lessons Learned
 
 - Modularizing Bash functions makes scripts easier to read and extend.
 - Debugging with `set -x` helps trace issues line by line.
