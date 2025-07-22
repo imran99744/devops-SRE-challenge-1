@@ -123,7 +123,7 @@ sudo apt install ssmtp -y  # For Ubuntu/Debian
 ```
 
 
-### 📦 Step 4: Configure `ssmtp`
+### Step 4: Configure `ssmtp`
 
 Open the `ssmtp.conf` file for editing: `sudo vi /etc/ssmtp/ssmtp.conf` Add the following configuration (replace placeholders with your Gmail credentials):
 
@@ -140,7 +140,7 @@ FromLineOverride=YES
 ```
 Save and exit the file.
 
-### 📦 Step 5: Test Email Sending
+### Step 5: Test Email Sending
 
 ```bash
 echo -e "Subject: Test Email\n\nThis is a test email." | ssmtp -v your-email@gmail.com
