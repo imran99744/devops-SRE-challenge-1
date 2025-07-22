@@ -126,4 +126,33 @@ This guide will help you configure `ssmtp` on your Linux system to send emails u
 #### On Amazon Linux 2:
 
 ```bash
-sudo yum install ssmtp -y
+sudo yum install ssmtp -y # For Amazon Linux 2
+sudo apt install ssmtp -y  # For Ubuntu/Debian
+```
+
+
+### 📦 Step 4: Configure `ssmtp`
+
+Open the `ssmtp.conf` file for editing: `sudo vi /etc/ssmtp/ssmtp.conf` Add the following configuration (replace placeholders with your Gmail credentials):
+
+```bash
+root=your-email@gmail.com
+mailhub=smtp.gmail.com:587
+AuthUser=your-email@gmail.com
+AuthPass=your-16-character-app-password
+UseTLS=YES
+UseSTARTTLS=YES
+rewriteDomain=gmail.com
+hostname=localhost
+FromLineOverride=YES
+```
+Save and exit the file.
+
+### 📦 Step 5: Test Email Sending
+
+```bash
+echo -e "Subject: Test Email\n\nThis is a test email." | ssmtp -v your-email@gmail.com
+Check your Gmail inbox (and Spam folder) for the test email.
+```
+
+If you see email sending is ok then run the `system_health_check.sh`
