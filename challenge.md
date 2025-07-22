@@ -42,5 +42,5 @@ This challenge will not only:
 
 ---
 
-Let’s automate reliability from Day 1! 💪  
+Let’s automate reliability from this challenge! 💪  
 Happy hacking! 🚀
