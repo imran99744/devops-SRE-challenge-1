@@ -85,3 +85,44 @@ To send the system health report **every four hours**, add the following line to
 I'm thrilled to participate in this challenge to grow my **DevOps and SRE skills**!
 
 
+## 📩 Configure SMTP on EC2 or Linux Server (Using Gmail + ssmtp)
+
+This guide will help you configure `ssmtp` on your Linux system to send emails using **Gmail’s SMTP server**.
+
+---
+
+### 🔧 Prerequisites
+
+- ✅ A **Gmail account** with **2-Step Verification** enabled.
+- ✅ An **App Password** generated from Gmail for `ssmtp`.
+- ✅ A Linux-based system (Amazon Linux 2, Ubuntu, etc.) with **root or sudo access**.
+- ✅ `ssmtp` installed.
+
+---
+
+### 🔐 Step 1: Enable 2-Step Verification on Gmail
+
+1. Visit: [Google Account Security](https://myaccount.google.com/security)
+2. Under **"Signing in to Google"**, click **2-Step Verification** and enable it.
+3. Follow the instructions to complete setup.
+
+---
+
+### 🔑 Step 2: Generate an App Password
+
+1. Return to [Google Account Security](https://myaccount.google.com/security).
+2. Click **App Passwords** (you’ll see this only after enabling 2-Step Verification).
+3. Choose:
+   - App: **Mail**
+   - Device: **Other** → Enter `ssmtp`
+4. Click **Generate**.
+5. Copy the **16-character app password** shown.
+
+---
+
+### 📦 Step 3: Install `ssmtp`
+
+#### On Amazon Linux 2:
+
+```bash
+sudo yum install ssmtp -y
