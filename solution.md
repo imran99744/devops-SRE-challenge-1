@@ -84,9 +84,4 @@ To send the system health report **every four hours**, add the following line to
 
 I'm thrilled to participate in this challenge to grow my **DevOps and SRE skills**!
 
-📢 I’ve shared my experience on social media using the hashtags:  
-`#getfitwithsagar`, `#SRELife`, and `#DevOpsForAll`
-
-Feel free to check out my journey and interact!
-
 
