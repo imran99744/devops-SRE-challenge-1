@@ -60,9 +60,10 @@ To send the system health report **every four hours**, add the following line to
 
 ```bash
 0 */4 * * * /path/to/system_health_check.sh <<< "5"
+```
 
 
-## 🧠 Lessons Learned
+## Lessons Learned
 
 - Modularizing Bash functions makes scripts easier to read and extend.
 - Debugging with `set -x` helps trace issues line by line.
@@ -70,7 +71,7 @@ To send the system health report **every four hours**, add the following line to
 - Adding exception handling using `if` conditions makes scripts more robust.
 - Scheduling with `cron` is essential for automation in DevOps and SRE.
 
----
+
 
 ## ❗Challenges Faced
 
@@ -78,7 +79,7 @@ To send the system health report **every four hours**, add the following line to
 - Handling interactive input in a cron job required using `<<<` to simulate input.
 - Managing multiline email content inside Bash required using `cat <<EOF`.
 
----
+
 
 ## 💬 Sharing the Experience
 
